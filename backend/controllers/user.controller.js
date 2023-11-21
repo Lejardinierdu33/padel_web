@@ -8,6 +8,10 @@ module.exports.getUsers = async (req, res) => {
   res.status(200).json(users);
 };
 
+module.exports.get = async (req, res) => {
+  console.log('hello World !')
+}
+
 // Fonction pour créer un nouvel utilisateur
 module.exports.createUser = async (req, res) => {
   // Vérifiez si tous les champs nécessaires sont présents
