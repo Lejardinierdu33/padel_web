@@ -1,0 +1,58 @@
+/* Add these styles to your existing CSS or create a new CSS file */
+
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    right: -100px; /* Start off-screen */
+    background-color: #333;
+    width: 450px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .cookie-popup p {
+    margin: 0;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin: 10px 0 15px 0;
+  }
+  
+  .validate_cookie {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .validate_cookie:hover {
+    background-color: #45a049;
+  }
+
+  .refuse_cookie {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .refuse_cookie:hover {
+    background-color: rgba(255, 0, 0, 0.829)
+    ;
+  }
+  /* Hover effect for the entire cookie popup */
+  .cookie-popup:hover {
+    right: 0; /* Display the popup when hovered */
+  }
+  

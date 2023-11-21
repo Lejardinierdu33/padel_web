@@ -1,0 +1,33 @@
+.error-container {
+    text-align: center;
+  }
+  
+  .error-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: #ff5757;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

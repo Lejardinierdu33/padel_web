@@ -1,0 +1,97 @@
+.modif-mp-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-section-modif-mp {
+  width: 1200px;
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-field {
+  margin-bottom: 20px;
+  width: 350px;
+}
+
+.password-field h2 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.password-field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.valider-button {
+  background-color: #f7941d;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #f7941d;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.valider-button:hover {
+  background-color: transparent;
+  color: #f7941d;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+
+.eye-icon {
+  position: relative;
+  top: -29px;
+  left: 345px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form-section-modif-mp {
+    width: 767px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  
+  .form-section-modif-mp {
+    width: 400px;
+  }
+
+  .password-field {
+    width: 100%;
+  }
+  .eye-icon {
+    position: relative;
+    top: -29px;
+    left: 5px;
+  }
+}
+
+@media screen and (max-width:401px) {
+  .form-section-modif-mp {
+    width: 200px;
+  }
+}

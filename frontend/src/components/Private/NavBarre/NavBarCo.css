@@ -1,0 +1,233 @@
+.navBarSectionConnexion {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.burger_menu_co {
+  display: none;
+}
+
+
+.second_section_right_co {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.navBarCo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 90%; /* Utilisation d'une largeur de 90% pour un design plus centré */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.iconLogoIntroCo {
+  height: 100%;
+}
+
+.iconLogoIntroCo img {
+  height: 80px;
+  width: 80px;
+}
+
+.navBarIntroSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.navBarIntroSection ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  gap: 50px;
+}
+
+.navBarIntroSection a {
+  color: #396bff;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navBarIntroSection a:hover {
+  color: #3a5999;
+}
+
+.navBarIntroSection a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3a5999;
+  transition: all 0.3s ease;
+}
+
+.navBarSectionCo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top_left_section {
+  display: flex;
+  align-items: center;
+}
+
+.nameId {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navBarSectionCo img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.BtnLogOut {
+  background-color: #fff;
+  color: #ff3333;
+  padding: 8px 20px;
+  border: 1px solid #ff3333; /* Ajout d'une bordure pour un meilleur contraste */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition en douceur au survol */
+
+}
+
+.BtnLogOut:hover {
+  background-color: #ff3333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .navBarCo {
+    max-width: 767px;
+  }
+  .iconLogoIntroCo.open {
+    display: none;
+  }
+
+  .navBarIntroSection {
+    display: none;
+    transition: display 0.3s ease;
+  }
+
+  .navBarIntroSection.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBarIntroSection ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .navBarIntroSection ul {
+    gap: 10px;
+  }
+  
+  .navBarSectionCo {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .BtnLogOut{
+    width: 100%;
+  }
+  .navBarSectionConnexion {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navBarCo {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  .second_section_right_co {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
+    transition: padding-top 0.3s ease, gap 0.3s ease;
+  }
+
+  .navBarSectionCo {
+    display: none;
+    transition: display 0.3s ease;
+  }
+
+  .navBarSectionCo.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-left: 35px;
+    margin: 20px 0;
+  }
+
+  .second_section_right_co.open {
+    padding-top: 50px;
+    gap: 20px;
+  }
+
+  .navBarIntroSection {
+    display: none;
+    transition: display 0.3s ease;
+  }
+
+  .navBarIntroSection.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBarIntroSection ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .burger_menu_co {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width: 30px;
+    transition: font-size 0.3s ease, width 0.3s ease;
+  }
+  
+}

@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav_section_all {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navBarIntro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navBarIntroSectionPublic {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.navBarIntroSectionPublic ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  gap: 50px;
+}
+
+.navBarIntroSectionPublic a {
+  color: #396bff;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navBarIntroSectionPublic a:hover {
+  color: #3a5999;
+}
+
+.navBarIntroSectionPublic a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3a5999;
+  transition: all 0.3s ease;
+}
+
+.navBarIntroBtn {
+  display: flex;
+  gap: 30px;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.BtnLogIn {
+  background-color: transparent;
+  border: 2px solid #396bff;
+  color: #396bff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.BtnLogIn a {
+  color: #396bff;
+}
+
+.BtnLogIn:hover a {
+  color: white;
+}
+
+.BtnLogIn:hover {
+  color: white;
+  background-color: #396bff;
+  border-color: #396bff;
+  transform: scale(1.1);
+}
+
+.BtnSignIn {
+  background-color: #f7941d;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 2px solid #f7941d;
+  transition: all 0.3s ease;
+}
+
+.BtnSignIn a {
+  color: white;
+}
+
+.BtnSignIn:hover a {
+  color: #f7941d;
+}
+
+.BtnSignIn:hover {
+  background-color: #ffffff;
+  color: #f7941d;
+  transform: scale(1.1);
+}
+
+.iconLogoIntro img {
+  height: 80px;
+  width: 80px;
+}
+
+.second_section_right {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  .navBarIntro {
+    max-width: 767px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_section_all {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navBarIntro {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  .second_section_right {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
+    transition: padding-top 0.3s ease, gap 0.3s ease;
+  }
+
+  .second_section_right.open {
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .iconLogoIntro {
+    padding-left: 20px;
+    transition: padding-left 0.3s ease;
+  }
+
+  .iconLogoIntro.open {
+    display: none;
+  }
+
+  .navBarIntroSectionPublic {
+    display: none;
+    transition: display 0.3s ease;
+  }
+
+  .navBarIntroSectionPublic.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navBarIntroSectionPublic ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .navBarIntroBtn {
+    display: none;
+    transition: display 0.3s ease;
+  }
+
+  .navBarIntroBtn.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding-left: 35px;
+    margin: 20px 0;
+  }
+
+  .burger_menu {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    width: 30px;
+    transition: font-size 0.3s ease, width 0.3s ease;
+  }
+}

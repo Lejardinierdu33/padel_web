@@ -1,0 +1,115 @@
+.container_connexion_section {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    margin-top: 100px;
+    background-color: #396bff;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header_connexion {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .form_connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+  }
+  
+  .input-field-co {
+    width: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .login-button {
+    background-color: #f7941d;
+    color: white;
+    border: 2px solid #f7941d;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .login-button:hover {
+    background-color: transparent;
+    color: #f7941d;
+    border: 2px solid #f7941d;
+  }
+
+  /* Ajouter ces styles à votre fichier CSS */
+.password-toggle {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.password-toggle {
+  position: relative;
+  top: -75px;
+  left: 450px;
+  font-size: 20px;
+  width: 20px;
+}
+  
+  .options-co {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .options-co a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    
+    .login-button {
+      width: 100%;
+    }
+
+  .password-toggle {
+    position: relative;
+    top: -75px;
+    left: 10px;
+    font-size: 20px;
+    width: 20px;
+  }
+  }

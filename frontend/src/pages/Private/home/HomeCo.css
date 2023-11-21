@@ -1,0 +1,656 @@
+.section_home_co {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e9e3e3;
+}
+
+.section_header_co {
+  background-image: url("../../img/duo-padel.webp");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #396bff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 100px;
+}
+
+.overlay_header_co {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.filter-section_co {
+  z-index: 2;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.filtre_search_co {
+  height: 50px;
+  width: 250px;
+  border: none;
+  border-right: solid 1px gray;
+  text-align: center;
+}
+
+.section_match_co {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+
+.section_left_filtre {
+  width: 30%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #396bff;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-input:checked {
+  background-color: #396bff;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Styling for the "8h - 12h" text */
+.checkbox-label span {
+  margin-left: 5px;
+}
+
+.filter-section_co_left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-section_co_left label {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.section_right_card {
+  width: 70%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card_match_admin {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.match-card {
+  background-color: white;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.match-top-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 20px 0 0;
+  gap: 150px;
+}
+
+.secteurLieu_section {
+  display: none;
+}
+
+.match-level {
+  font-size: 10px;
+}
+
+.match-center-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.section_hd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.match-bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  gap: 5px;
+}
+
+.user-avatar {
+  height: 50px;
+}
+
+.user-avatar img {
+  height: 100%;
+}
+
+.user-name {
+  font-size: 15px;
+}
+
+.pop_up_resa {
+  z-index: 5;
+}
+
+.match-date {
+  font-weight: bold;
+}
+
+.club-name {
+  font-size: 20px;
+}
+
+.sector-nord {
+  background-color: rgba(1, 1, 255, 0.295);
+}
+
+.sector-sud {
+  background-color: rgba(255, 255, 0, 0.295);
+}
+
+.sector-ouest {
+  background-color: rgba(0, 128, 0, 0.295);
+}
+
+.sector-est {
+  background-color: rgba(255, 255, 255, 0.295);
+}
+
+.price-per-person {
+  font-size: 18px;
+}
+
+
+.section_mymatch_co {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+
+.trier_par {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: -2px;
+}
+
+.match-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #f7941d;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.reset-btn {
+  position: relative;
+  top: -50px;
+  left: -10px;
+  border: 1px #396bff solid;
+  font-size: 18px;
+  background-color: #396bff;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.match-btn:hover {
+  background-color: #e6831d;
+}
+
+.reset-btn:hover {
+  border: 1px #396bff solid;
+  background-color: transparent;
+  padding: 10px 15px;
+  color: #396bff;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.modal {
+  z-index: 5;
+}
+
+/* Styles pour les écrans entre 767px et 1200px inclusivement */
+@media screen and (max-width: 1200px) {
+  
+  
+  .filter-section_co {
+    width: 767px;
+  }
+  
+  .section_match_co {
+    width: 767px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section_left_filtre {
+    width: 100%;
+    flex-direction: column;
+    height: 300px;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-section_co_left {
+    flex-direction: row;
+  }
+  
+  .section_right_card {
+    width: 100%;
+    padding: initial;
+    display: flex;
+  }
+  
+  .Card_match_admin {
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .match-card {
+    background-color: white;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .match-top-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 20px 0 0;
+    gap: 250px;
+  }
+  
+  .secteurLieu_section {
+    display: none;
+  }
+  
+  .match-level {
+    font-size: 10px;
+  }
+  
+  .match-center-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+  }
+  
+  .section_hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .match-bottom-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    gap: 5px;
+  }
+  
+  .user-avatar {
+    height: 50px;
+  }
+  
+  .user-avatar img {
+    height: 100%;
+  }
+  
+  .user-name {
+    font-size: 15px;
+  }
+  
+  .pop_up_resa {
+    z-index: 5;
+  }
+  
+  .match-date {
+    font-weight: bold;
+  }
+  
+  .club-name {
+    font-size: 20px;
+  }
+  
+  .sector-nord {
+    background-color: rgba(1, 1, 255, 0.295);
+  }
+  
+  .sector-sud {
+    background-color: rgba(255, 255, 0, 0.295);
+  }
+  
+  .sector-ouest {
+    background-color: rgba(0, 128, 0, 0.295);
+  }
+  
+  .sector-est {
+    background-color: rgba(255, 255, 255, 0.295);
+  }
+  
+  .price-per-person {
+    font-size: 18px;
+  }
+  
+  
+  .section_mymatch_co {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    left: -10px;
+  }
+  
+  .reset-btn {
+    position: initial;
+  }
+  
+  .modal {
+    z-index: 5;
+  }
+  
+}
+
+/* Styles pour les écrans entre 767px et 1200px inclusivement */
+@media screen and (max-width: 767px) {
+  
+  
+  .filter-section_co {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .filtre_search_co {
+    border: none;
+    width: 100%;
+  }
+  
+  .section_match_co {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section_left_filtre {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .filter-section_co_left {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section_right_card {
+    width: 100%;
+    padding: initial;
+    display: flex;
+  }
+  
+  .Card_match_admin {
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .match-card {
+    background-color: white;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .match-top-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0 0;
+    gap: initial;
+  }
+  
+  .secteurLieu_section {
+    display: none;
+  }
+  
+  .match-level {
+    font-size: 10px;
+  }
+  
+  .match-center-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+  }
+  
+  .section_hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .match-bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    gap: 5px;
+  }
+  
+  .user-avatar {
+    height: 50px;
+  }
+  
+  .user-avatar img {
+    height: 100%;
+  }
+  
+  .user-name {
+    font-size: 15px;
+  }
+  
+  .pop_up_resa {
+    z-index: 5;
+  }
+  
+  .match-date {
+    font-weight: bold;
+  }
+  
+  .club-name {
+    font-size: 20px;
+  }
+  
+  .sector-nord {
+    background-color: rgba(1, 1, 255, 0.295);
+  }
+  
+  .sector-sud {
+    background-color: rgba(255, 255, 0, 0.295);
+  }
+  
+  .sector-ouest {
+    background-color: rgba(0, 128, 0, 0.295);
+  }
+  
+  .sector-est {
+    background-color: rgba(255, 255, 255, 0.295);
+  }
+  
+  .price-per-person {
+    font-size: 18px;
+  }
+  
+  
+  .section_mymatch_co {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    position: initial;
+  }
+  
+  .reset-btn {
+    position: initial;
+  }
+  
+  .modal {
+    z-index: 5;
+  }
+  
+}

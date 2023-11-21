@@ -1,0 +1,75 @@
+.section_modif_donnees_accueil {
+    width: 100%;
+    text-align: center;
+    background-color: #E9E3E3;
+    padding-top: 100px;
+  }
+
+  .section-modif-option-div{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .modif-option-div {
+    margin-bottom: 20px;
+    background-color: white;
+    width: 1200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .modif-option-div:hover {
+    background-color: #f2f2f2;
+  }
+
+  .modif-option-div h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .modif-option-div button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .modif-option-div button a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .deleteBtn {
+    background-color: transparent;
+    border: none;
+    color: #FF3333;
+    cursor: pointer;
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+  
+    .modif-option-div {
+      width: 767px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .modif-option-div {
+      width: 100%;
+    }
+  
+    .section-modif-option-div a {
+      width: 90%;
+    }
+  }

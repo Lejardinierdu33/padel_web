@@ -1,0 +1,33 @@
+.footer_section {
+    background-color: #396bff;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .footer-center {
+    display: flex;
+    gap: 50px;
+    height: 50px;
+  }
+  
+  .LogOutFooter {
+    background-color: #FF3333;
+    border: none;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
