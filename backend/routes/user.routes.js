@@ -13,7 +13,7 @@ const {
 
 const router = express.Router();
 
-router.get("/get", get);
+// router.get("/get", get);
 
 // Les routes existantes
 router.get("/", getUsers);

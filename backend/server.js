@@ -53,5 +53,5 @@ const server = app.listen(port, () => {
 });
 
 
-// Exportez votre application ET le serveur
-module.exports = { app, server };
+// // Exportez votre application ET le serveur
+// module.exports = { app, server };

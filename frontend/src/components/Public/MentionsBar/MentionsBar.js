@@ -3,6 +3,7 @@ import React from "react";
 
 // Importation des styles CSS spécifiques à la barre de mentions légales
 import "./MentionsBar.css";
+import { Link } from "react-router-dom";
 
 // Définition du composant fonctionnel MentionsBar
 function MentionsBar() {
@@ -13,9 +14,9 @@ function MentionsBar() {
       <nav className="main-nav">
         <ul>
           {/* Élément de liste avec un lien vers la page des mentions légales */}
-          <li>
-            <a href="#">Mentions Légales</a>
-          </li>
+          <Link to="/mentionslegales">
+            Mentions Légales
+          </Link>
           {/* Élément de liste avec un lien vers la page des données personnelles */}
           <li>
             <a href="#">Données personnelles</a>

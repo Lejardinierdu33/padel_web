@@ -5,6 +5,7 @@ import AuthRouter from "./pages/Auth/ConnectPage/AuthRouter";
 import AuthGuard from "./helpers/AuthGuard";
 import { UserProvider } from "./pages/Admin/UserContext";
 import UserRouter from "./pages/Private/UserRouter";
+import MentionLegales from "./components/Public/MentionsBar/MentionLégales/MentionLegales";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
                 </AuthGuard>
               }
             />
+            <Route path="/mentionslegales/" element={<MentionLegales />} />
           </Routes>
         </BrowserRouter>
       </UserProvider>
