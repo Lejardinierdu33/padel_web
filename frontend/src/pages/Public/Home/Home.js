@@ -4,7 +4,6 @@ import imgObjectif from "../../img/homme_search.webp";
 import "./Home.css";
 import Footer from "../../../components/Public/Footer/Footer";
 import FlipCard from "../../../components/Public/FlipCard/FlipCard";
-import MentionsBar from "../../../components/Public/MentionsBar/MentionsBar";
 import CookieConsentPopup from "../../../_utils/Cookies/CookieConsentPopup";
 import { Link } from "react-router-dom";
 
@@ -66,11 +65,8 @@ function Home() {
       {/* Pied de page */}
       <Footer />
       
-      {/* Barre de mentions légales */}
-      <MentionsBar />
-      
       {/* Popup de consentement pour les cookies */}
-      <CookieConsentPopup s/>
+      <CookieConsentPopup />
     </div>
   );
 }

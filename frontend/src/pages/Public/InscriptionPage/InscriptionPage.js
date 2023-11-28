@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import MentionsBar from "../../../components/Public/MentionsBar/MentionsBar";
 import NavBarFour from "../../../components/Public/NavBarre/NavBarFour";
 import { accountService } from "../../../_services/account.service";
 import { FaEye } from "react-icons/fa";
@@ -189,7 +188,6 @@ function InscriptionPage() {
           )}
         </div>
       </div>
-      <MentionsBar />
     </div>
   );
 }
