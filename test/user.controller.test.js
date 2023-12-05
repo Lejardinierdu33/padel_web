@@ -21,5 +21,4 @@ describe("User Controller Tests", () => {
     })
   });
 
-  // Vous pouvez ajouter d'autres tests pour les différentes fonctions du contrôleur
 });

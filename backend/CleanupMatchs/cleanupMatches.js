@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const moment = require('moment');
 const cron = require('node-cron');
-const Match = require('../models/post.model'); // Assurez-vous d'ajuster le chemin vers votre modèle Match
+const Match = require('../models/post.model');
 
 const url = "mongodb+srv://" + process.env.HOST + "/" + process.env.DB_NAME;
 

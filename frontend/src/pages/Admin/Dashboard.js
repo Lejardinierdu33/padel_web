@@ -52,6 +52,7 @@ export default function Dashboard() {
     fetchMailData();
     fetchNewsletterData();
   }, []);
+  
   // Vérification si l'utilisateur a le rôle d'administrateur
   if (!user || user.role !== 'admin') {
     // Redirection de l'utilisateur vers une page non autorisée ou autre gestion en cas d'accès non autorisé
