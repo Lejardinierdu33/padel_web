@@ -60,20 +60,21 @@ module.exports.sendGroupEmail = async (req, res) => {
 
     // Configuration du transporteur nodemailer (utilisez votre propre configuration)
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'outlook',
       auth: {
-        user: 'votre-email@gmail.com', // Remplacez par votre adresse e-mail Gmail
-        pass: 'votre-mot-de-passe', // Remplacez par votre mot de passe Gmail
+        user: 'leo.segalini@outlook.com', // Remplacez par votre adresse e-mail Outlook
+        pass: 'LOLOLOLO.12121212', // Remplacez par votre mot de passe Outlook
       },
     });
 
-    // Envoyer un e-mail à chaque abonné
+    // Envoyer un e-mail à chaque abonné avec CCI
     for (const subscriber of subscribers) {
       await transporter.sendMail({
-        from: 'votre-email@gmail.com',
-        to: subscriber.email,
+        from: 'leo.segalini@outlook.com',
+        to: 'leo.segalini@outlook.com',
         subject: subject,
         text: body,
+        bcc: subscriber.email, // Utilisez "bcc" pour la copie cachée
       });
     }
 
