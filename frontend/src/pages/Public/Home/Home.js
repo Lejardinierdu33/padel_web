@@ -13,7 +13,7 @@ function Home() {
     // Section principale de la page d'accueil
     <div className="homeIntroSection">
       {/* Barre de navigation en haut de la page */}
-      <NavBarIntro loading="lazy"/>
+      <NavBarIntro />
       
       {/* En-tête de la page */}
       <header className="header">

@@ -6,9 +6,7 @@
 }
 
 .header {
-  background-image: url("../../img/terrain-padel.webp");
-  background-size: cover;
-  background-position: center;
+  background: url("../../img/terrain-padel.webp") center/cover ;
   height: 500px;
   width: 100%;
   display: flex;
@@ -114,19 +112,17 @@
   color: #396bff;
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  
   .objectifs-section,
   .terrains-section {
     width: 767px;
     height: auto;
   }
-  
+
   .objectifs-content {
     flex-direction: column;
   }
-  
+
   .objectifs-text {
     width: 100%;
   }
@@ -138,11 +134,11 @@
     width: 100%;
     height: auto;
   }
-  
+
   .objectifs-content {
     flex-direction: column;
   }
-  
+
   .objectifs-text p {
     padding: 0 10px;
     text-align: center;
@@ -156,7 +152,7 @@
     width: 100%;
     height: auto;
   }
-  
+
   .objectifs-image img {
     height: 100%;
     width: 250px;

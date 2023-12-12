@@ -24,7 +24,7 @@ function FlipCard() {
                 {/* Superposition (overlay) pour un effet visuel */}
                 <div className="overlay"></div>
                 {/* Texte indiquant le secteur "Nord" */}
-                <p>Nord</p>
+                <h2>Nord</h2>
               </div>
               {/* Contenu de la face arrière de la carte */}
               <div className="flip-card-back">
@@ -49,7 +49,7 @@ function FlipCard() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <div className="overlay"></div>
-                <p>Ouest</p>
+                <h2>Ouest</h2>
               </div>
               <div className="flip-card-back">
                 <div className="flip-card-back-ouest">
@@ -73,7 +73,7 @@ function FlipCard() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <div className="overlay"></div>
-                <p>Sud</p>
+                <h2>Sud</h2>
               </div>
               <div className="flip-card-back">
                 <div className="flip-card-back-sud">
@@ -97,7 +97,7 @@ function FlipCard() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <div className="overlay"></div>
-                <p>Est</p>
+                <h2>Est</h2>
               </div>
               <div className="flip-card-back">
                 <div className="flip-card-back-est">
