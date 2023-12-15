@@ -21,7 +21,7 @@ function Home() {
         <div className="header-content">
           <h1>
             Plus qu’un site,
-            <br /> une communauté
+            <br /> une communauté 🎾
           </h1>
           <div id="objectifs"></div>
         </div>
